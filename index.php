@@ -63,7 +63,7 @@
                     <tr>
                         <td><?php 
                         echo $converter->convertToHtml(urldecode($row['title']));?></td>
-                        <td><?php echo $row['created_at'];?></td>
+
                         <td>
                             <a href="index.php?edid=<?php echo $row['id'];?>"><span class="material-icons">edit</span></a>
                             <a href="tasks.php?delid=<?php echo $row['id'];?>"><span class="material-icons text-danger">delete_forever</span></a>
