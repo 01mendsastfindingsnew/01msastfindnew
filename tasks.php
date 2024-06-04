@@ -11,7 +11,7 @@ if(isset($_POST['save_task'])){
         $query = "UPDATE task SET title = '$title' WHERE id = '$edid'";
     }
     else $query = "INSERT INTO task(title) VALUES ('$title')";
-    $result = mysqli_query($conn, $query);
+
 
     if(!$result){
         die("Query failed");
